@@ -1,21 +1,15 @@
 class UrgenteNotificacionFactory implements NotificacionFactory {
-
-    @Override
     public EmailNotificacion crearEmailNotificacion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearEmailNotificacion'");
+        // Implementar lógica de creación de email para notificaciones urgentes
+        return new EmailNotificacion(null);
     }
 
-    @Override
     public SMSNotificacion crearSMSNotificacion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearSMSNotificacion'");
+        // Implementar lógica de creación de SMS para notificaciones urgentes
+        return new SMSNotificacion(null);
     }
-    // TODO: Implementar métodos de creación específicos para notificaciones urgentes
 
-    @Override
-    public AppNotificacion crearAppNotificacion() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearAppNotificacion'");
+    public AppNotificacion creAppNotificacion(){
+        return new AppNotificacion();
     }
-}
+} 

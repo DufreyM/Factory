@@ -1,5 +1,13 @@
 public class NotificacionFactory {
     public Notificacion crearNotificacion(String tipo) {
-        // TODO: Implementar lógica para retornar el tipo correcto de notificación
+        if ("email".equalsIgnoreCase(tipo)) {
+            return new EmailNotificacion();
+        } else if ("sms".equalsIgnoreCase(tipo)) {
+            return new SMSNotificacion();
+        } else if ("app".equalsIgnoreCase(tipo)) {
+            return new AppNotificacion();
+        } else {
+            throw new IllegalArgumentException("Tipo de notificación no válido: " + tipo);
+        }
     }
 }
