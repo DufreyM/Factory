@@ -1,0 +1,5 @@
+public class NotificacionFactory {
+    public Notificacion crearNotificacion(String tipo) {
+        // TODO: Implementar lógica para retornar el tipo correcto de notificación
+    }
+}
